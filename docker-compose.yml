@@ -1,0 +1,22 @@
+# https://github.com/jlesage/docker-nginx-proxy-manager
+version: '3'
+services:
+  nginx-proxy-manager:
+#    build: .
+    image: jlesage/nginx-proxy-manager
+    container_name: nginx-proxy-manager
+    restart: unless-stopped
+    dns:
+      - 192.168.1.30
+#      - 192.168.1.1
+    ports:
+      - 81:8181
+      - 80:8080
+      - 443:4443
+    volumes:
+      - "./config:/config:rw"
+
+# https://nginxproxymanager.com/upgrading/
+# docker-compose pull
+# docker-compose up -d
+# docker-compose down
