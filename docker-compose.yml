@@ -16,6 +16,8 @@ services:
     volumes:
       - "./config:/config:rw"
 
+# default logon: admin@example.com / changeme
+
 # https://nginxproxymanager.com/upgrading/
 # docker-compose pull
 # docker-compose up -d

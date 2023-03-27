@@ -1,9 +1,13 @@
 #  Nginx Proxy Manager
 https://nginxproxymanager.com
 
-
 Docker
 - https://github.com/jlesage/docker-nginx-proxy-manager
+
+
+# Setup
+Default login
+- admin@example.com / changeme
 
 
 # Renewal
